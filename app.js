@@ -21,6 +21,25 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
+app.get('/futurebin/:page',(req, res) => {
+  Futurebin.findOne({short:req.params.page})
+  .then(futurebin => {
+      if(!futurebin) {
+          res.status(404);
+          res.json({message:'le futurebin n\'a pas été trouvé'});
+      }
+      else {
+          res.status(200);
+          res.end(JSON.stringify(futurebin));
+      }
+  }).
+  catch(error => {
+      res.status(400);
+      res.json({message:error});
+      console.log(error);
+  });
+});
+
 app.post('/api',(req,res) => {
   delete req.body._id;
   let datas = {
