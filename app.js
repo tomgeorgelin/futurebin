@@ -23,17 +23,20 @@ app.get('/', (req, res) => {
 
 app.post('/api',(req,res) => {
   delete req.body._id;
-  const futurebin = new Futurebin({
-      text:req.body.text,
-      language:req.body.language,
-      expiration_time:req.body.expiration_time,
-      code:makeId(5)
-  });
+  let datas = {
+    text:req.body.code,
+    language:req.body.language,
+    code:makeId(6)
+  }
+  if(req.body.expiration) {
+    datas.expireAt = req.body.expiration;
+  } 
+  const futurebin = new Futurebin(datas);
   
   futurebin.save()
       .then((e) => {
           res.status(201);
-          res.json({message:'ok'});
+          res.json({code:req.protocol + '://' + req.get('host') + '/futurebin/' + e.code});
       })
       .catch(error => res.status(400).json({ error }));
 })
