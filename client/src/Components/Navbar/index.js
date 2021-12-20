@@ -4,7 +4,7 @@ import {ReactComponent as Starship} from './../../starship.svg';
 
 const Navbar = () => {
     return (
-        <Nav>
+        <Nav style={{marginBottom:"1rem"}}>
             <div className="box" style={{justifyContent:"start"}}>
                 <Bars/>
             </div>
