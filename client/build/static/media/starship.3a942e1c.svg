@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 490" width="70" style="border-radius: 100%;">
+    <defs>
+        <style>.cls-1{fill:#4b5e75;}.cls-2{fill:#ec9551;}.cls-3{fill:#394756;}.cls-4{opacity:0.15;}.cls-5{fill:#d65358;}.cls-6{fill:#fdcd7b;}.cls-7{fill:#e0e0cf;}#lines{transform:translateY(-70%)}#center,#left,#right{opacity:0}svg:hover #starship{animation:struggle 5s infinite forwards}svg:hover #particules{animation:struggle 5s infinite forwards}svg:hover #left{animation:downParticlesLeft 1.2s linear forwards infinite}svg:hover #right{animation:downParticlesRight 1.2s linear forwards infinite;animation-delay:.5s}svg:hover #center{animation:downParticlesMiddle 1.2s linear forwards infinite;animation-delay:.5s}svg:hover #lines rect{animation:down 2s;animation-timing-function:linear;animation-fill-mode:forwards;animation-delay:calc(var(--order) * 500ms);animation-iteration-count:infinite}@keyframes struggle{0%{transform:translate(0,0)}25%{transform:translate(-2px,-2px)}50%{transform:translate(2px,-2px)}75%{transform:translate(2px,2px)}100%{transform:translate(0,0)}}@keyframes down{from{transform:translateY(-70%)}to{transform:translateY(210%)}}@keyframes downParticlesLeft{from{transform:translate(5%,-15%)}20%{opacity:1}to{transform:translate(-5%,10%);opacity:0}}@keyframes downParticlesRight{from{transform:translate(-5%,-15%)}20%{opacity:1}to{transform:translate(5%,10%);opacity:0}}@keyframes downParticlesMiddle{from{transform:translate(-6px,-15%)}20%{opacity:1}to{transform:translate(-6px,10%);opacity:0}}
+        #line6{--order:5}#line5{--order:3}#line4{--order:1}#line3{--order:4}#line2{--order:2}#line1{--order:0}</style>
+    </defs>
+    <g id="background">
+        <circle class="cls-1" cx="245" cy="245" r="245"/>
+    </g>
+    <g id="particules">
+        <circle id="left" class="cls-2" cx="215" cy="400" r="10"/>
+        <circle id="right" class="cls-2" cx="275" cy="400" r="10"/>
+        <circle id="center" class="cls-2" cx="255" cy="450" r="8"/>
+    </g>
+    <g id="lines">
+        <rect id="line6" class="cls-3" x="433.47" y="327.3" width="6.37" height="80.79" rx="3.19" transform="translate(868.31 730.38) rotate(180)"/>
+        <rect id="line5" class="cls-3" x="364.72" y="188.26" width="6.37" height="80.79" rx="3.19" transform="translate(730.82 452.3) rotate(-180)"/>
+        <rect id="line4" class="cls-3" x="403.85" y="72.15" width="6.37" height="80.79" rx="3.19" transform="translate(809.08 220.08) rotate(-180)"/>
+        <rect id="line3" class="cls-3" x="58.67" y="322.57" width="6.37" height="80.79" rx="3.19"/>
+        <rect id="line2" class="cls-3" x="127.42" y="183.53" width="6.37" height="80.79" rx="3.19"/>
+        <rect id="line1" class="cls-3" x="88.28" y="67.42" width="6.37" height="80.79" rx="3.19"/>
+    </g>
+    <g id="starship">
+        <path id="flame_shadow" class="cls-4" d="M291.45,326.06c.14-1.19-.89-20.32-.76-21.54,0,0-10.79,2.61-10.85,2.61s-4.66,4-4.66,4L262.93,325h-28l0,.1h-.56l.24,2.05c-1.7,11.72-7.75,69.85,26.92,134.09a1.62,1.62,0,0,0,2.84,0C297.7,399.42,293.34,340.69,291.45,326.06Z" transform="translate(-5 -5)"/>
+        <path id="reactor_left_shadow" class="cls-4" d="M204.13,389.89l26.92-69.64-40-81.13s-42.22,24.48-27.29,67.66l22.87,72.6a28.51,28.51,0,0,0,4.59,9c2.21,2.86,5.24,5.59,8.58,5.17A5.59,5.59,0,0,0,204.13,389.89Z" transform="translate(-5 -5)"/>
+        <path id="reactor_right_shadow" class="cls-4" d="M322,389.7,295,320.06l40-81.14s42.21,24.48,27.28,67.67l-22.86,72.6a28.83,28.83,0,0,1-4.59,9c-2.21,2.86-5.24,5.59-8.58,5.16A5.57,5.57,0,0,1,322,389.7Z" transform="translate(-5 -5)"/>
+        <path id="reactor_left" class="cls-5" d="M194.13,379.89l26.92-69.64-40-81.13s-42.22,24.48-27.29,67.66l22.87,72.6a28.51,28.51,0,0,0,4.59,9c2.21,2.86,5.24,5.59,8.58,5.17A5.59,5.59,0,0,0,194.13,379.89Z" transform="translate(-5 -5)"/>
+        <path id="reactor_right" class="cls-5" d="M312,379.7,285,310.06l40-81.14s42.21,24.48,27.28,67.67l-22.86,72.6a28.83,28.83,0,0,1-4.59,9c-2.21,2.86-5.24,5.59-8.58,5.16A5.57,5.57,0,0,1,312,379.7Z" transform="translate(-5 -5)"/>
+        <path id="flame_exterior" class="cls-2" d="M280.93,315h-56s-12.25,64.29,26.58,136.24a1.62,1.62,0,0,0,2.84,0C293.18,379.26,280.93,315,280.93,315Z" transform="translate(-5 -5)"/>
+        <path id="flame_interior" class="cls-6" d="M253.12,315.07H224.35c6.69,61.82,21.27,85.44,26.69,92.28a2.65,2.65,0,0,0,4.16,0c5.42-6.84,20-30.46,26.69-92.28Z" transform="translate(-5 -5)"/>
+        <path id="body_shadow" class="cls-4" d="M254.85,75.2a125.71,125.71,0,0,0-32.15,34.08C196,151.17,155,243.83,239.51,331.81l8.36,7.68a20.64,20.64,0,0,0,14,5.44h6.06a13.16,13.16,0,0,0,9.46-4l8.85-9.12s105.88-88.47,12.88-227.57a116.39,116.39,0,0,0-27.46-28.72l-.63-.47A13.37,13.37,0,0,0,255.18,75Z" transform="translate(-5 -5)"/>
+        <path id="body" class="cls-7" d="M244.85,65.2A125.71,125.71,0,0,0,212.7,99.28C186,141.17,145,233.83,229.51,321.81l8.36,7.68a20.64,20.64,0,0,0,14,5.44h6.06a13.16,13.16,0,0,0,9.46-4l8.85-9.12s105.88-88.47,12.88-227.57a116.39,116.39,0,0,0-27.46-28.72l-.63-.47A13.37,13.37,0,0,0,245.18,65Z" transform="translate(-5 -5)"/>
+        <circle id="porthole_lower_shadow" class="cls-4" cx="258.12" cy="182.9" r="30.05"/>
+        <circle id="porthole_upper_shadow" class="cls-4" cx="257.93" cy="122.85" r="15.04"/>
+        <circle id="porthole_lower" class="cls-1" cx="248.12" cy="172.9" r="30.05"/>
+        <circle id="porthole_upper" class="cls-1" cx="247.93" cy="112.85" r="15.04"/>
+        <path id="backbone_reactor_shadow" class="cls-4" d="M259.13,243.17a47.6,47.6,0,0,0-17,22.49,6.88,6.88,0,0,0-.35,3.15l11.67,102.12,2.42,16a5.72,5.72,0,0,1,.08.92l.17,8a7.08,7.08,0,0,0,3.15,5.77h0a7.11,7.11,0,0,0,8,0h0a7.11,7.11,0,0,0,3.15-5.77l.16-8a7.14,7.14,0,0,1,.08-.92l2.43-16L284.7,268.81a6.74,6.74,0,0,0-.35-3.15,47.54,47.54,0,0,0-17-22.49A7.09,7.09,0,0,0,259.13,243.17Z" transform="translate(-5 -5)"/>
+        <path id="backbone_reactor" class="cls-5" d="M249.13,233.17a47.6,47.6,0,0,0-17,22.49,6.88,6.88,0,0,0-.35,3.15l11.67,102.12,2.42,16a5.72,5.72,0,0,1,.08.92l.17,8a7.08,7.08,0,0,0,3.15,5.77h0a7.11,7.11,0,0,0,8,0h0a7.11,7.11,0,0,0,3.15-5.77l.16-8a7.14,7.14,0,0,1,.08-.92l2.43-16L274.7,258.81a6.74,6.74,0,0,0-.35-3.15,47.54,47.54,0,0,0-17-22.49A7.09,7.09,0,0,0,249.13,233.17Z" transform="translate(-5 -5)"/>
+    </g>
+</svg>
