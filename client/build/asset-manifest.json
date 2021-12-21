@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "./static/css/main.08fed4b8.chunk.css",
-    "main.js": "./static/js/main.abfa3140.chunk.js",
-    "main.js.map": "./static/js/main.abfa3140.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.775dd654.js",
-    "runtime-main.js.map": "./static/js/runtime-main.775dd654.js.map",
-    "static/css/2.189ab08d.chunk.css": "./static/css/2.189ab08d.chunk.css",
-    "static/js/2.fa368a89.chunk.js": "./static/js/2.fa368a89.chunk.js",
-    "static/js/2.fa368a89.chunk.js.map": "./static/js/2.fa368a89.chunk.js.map",
-    "static/js/3.d915f79b.chunk.js": "./static/js/3.d915f79b.chunk.js",
-    "static/js/3.d915f79b.chunk.js.map": "./static/js/3.d915f79b.chunk.js.map",
-    "index.html": "./index.html",
-    "static/css/2.189ab08d.chunk.css.map": "./static/css/2.189ab08d.chunk.css.map",
-    "static/css/main.08fed4b8.chunk.css.map": "./static/css/main.08fed4b8.chunk.css.map",
-    "static/js/2.fa368a89.chunk.js.LICENSE.txt": "./static/js/2.fa368a89.chunk.js.LICENSE.txt",
-    "static/media/starship.3a942e1c.svg": "./static/media/starship.3a942e1c.svg"
+    "main.css": "./client/static/css/main.08fed4b8.chunk.css",
+    "main.js": "./client/static/js/main.abfa3140.chunk.js",
+    "main.js.map": "./client/static/js/main.abfa3140.chunk.js.map",
+    "runtime-main.js": "./client/static/js/runtime-main.4f6f2fb4.js",
+    "runtime-main.js.map": "./client/static/js/runtime-main.4f6f2fb4.js.map",
+    "static/css/2.189ab08d.chunk.css": "./client/static/css/2.189ab08d.chunk.css",
+    "static/js/2.676b4332.chunk.js": "./client/static/js/2.676b4332.chunk.js",
+    "static/js/2.676b4332.chunk.js.map": "./client/static/js/2.676b4332.chunk.js.map",
+    "static/js/3.d915f79b.chunk.js": "./client/static/js/3.d915f79b.chunk.js",
+    "static/js/3.d915f79b.chunk.js.map": "./client/static/js/3.d915f79b.chunk.js.map",
+    "index.html": "./client/index.html",
+    "static/css/2.189ab08d.chunk.css.map": "./client/static/css/2.189ab08d.chunk.css.map",
+    "static/css/main.08fed4b8.chunk.css.map": "./client/static/css/main.08fed4b8.chunk.css.map",
+    "static/js/2.676b4332.chunk.js.LICENSE.txt": "./client/static/js/2.676b4332.chunk.js.LICENSE.txt",
+    "static/media/starship.3a942e1c.svg": "./client/static/media/starship.3a942e1c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.775dd654.js",
+    "static/js/runtime-main.4f6f2fb4.js",
     "static/css/2.189ab08d.chunk.css",
-    "static/js/2.fa368a89.chunk.js",
+    "static/js/2.676b4332.chunk.js",
     "static/css/main.08fed4b8.chunk.css",
     "static/js/main.abfa3140.chunk.js"
   ]
