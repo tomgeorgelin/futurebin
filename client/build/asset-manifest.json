@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "./futurebin/static/css/main.08fed4b8.chunk.css",
-    "main.js": "./futurebin/static/js/main.d1617fe0.chunk.js",
-    "main.js.map": "./futurebin/static/js/main.d1617fe0.chunk.js.map",
-    "runtime-main.js": "./futurebin/static/js/runtime-main.8da82cdc.js",
-    "runtime-main.js.map": "./futurebin/static/js/runtime-main.8da82cdc.js.map",
-    "static/css/2.189ab08d.chunk.css": "./futurebin/static/css/2.189ab08d.chunk.css",
-    "static/js/2.b79cf7c9.chunk.js": "./futurebin/static/js/2.b79cf7c9.chunk.js",
-    "static/js/2.b79cf7c9.chunk.js.map": "./futurebin/static/js/2.b79cf7c9.chunk.js.map",
-    "static/js/3.d915f79b.chunk.js": "./futurebin/static/js/3.d915f79b.chunk.js",
-    "static/js/3.d915f79b.chunk.js.map": "./futurebin/static/js/3.d915f79b.chunk.js.map",
-    "index.html": "./futurebin/index.html",
-    "static/css/2.189ab08d.chunk.css.map": "./futurebin/static/css/2.189ab08d.chunk.css.map",
-    "static/css/main.08fed4b8.chunk.css.map": "./futurebin/static/css/main.08fed4b8.chunk.css.map",
-    "static/js/2.b79cf7c9.chunk.js.LICENSE.txt": "./futurebin/static/js/2.b79cf7c9.chunk.js.LICENSE.txt",
-    "static/media/starship.3a942e1c.svg": "./futurebin/static/media/starship.3a942e1c.svg"
+    "main.css": "./static/css/main.08fed4b8.chunk.css",
+    "main.js": "./static/js/main.d1617fe0.chunk.js",
+    "main.js.map": "./static/js/main.d1617fe0.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.775dd654.js",
+    "runtime-main.js.map": "./static/js/runtime-main.775dd654.js.map",
+    "static/css/2.189ab08d.chunk.css": "./static/css/2.189ab08d.chunk.css",
+    "static/js/2.fa368a89.chunk.js": "./static/js/2.fa368a89.chunk.js",
+    "static/js/2.fa368a89.chunk.js.map": "./static/js/2.fa368a89.chunk.js.map",
+    "static/js/3.d915f79b.chunk.js": "./static/js/3.d915f79b.chunk.js",
+    "static/js/3.d915f79b.chunk.js.map": "./static/js/3.d915f79b.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/2.189ab08d.chunk.css.map": "./static/css/2.189ab08d.chunk.css.map",
+    "static/css/main.08fed4b8.chunk.css.map": "./static/css/main.08fed4b8.chunk.css.map",
+    "static/js/2.fa368a89.chunk.js.LICENSE.txt": "./static/js/2.fa368a89.chunk.js.LICENSE.txt",
+    "static/media/starship.3a942e1c.svg": "./static/media/starship.3a942e1c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8da82cdc.js",
+    "static/js/runtime-main.775dd654.js",
     "static/css/2.189ab08d.chunk.css",
-    "static/js/2.b79cf7c9.chunk.js",
+    "static/js/2.fa368a89.chunk.js",
     "static/css/main.08fed4b8.chunk.css",
     "static/js/main.d1617fe0.chunk.js"
   ]
