@@ -18,11 +18,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/futurebin', (req, res) => {
-  res.sendFile(__dirname + '/client/build/public/index.html')
-  //res.send('Hello World!');
-});
-
 app.get('/futurebin/:page',(req, res) => {
   Futurebin.findOne({short:req.params.page})
   .then(futurebin => {
