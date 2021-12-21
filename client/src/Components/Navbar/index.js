@@ -5,7 +5,7 @@ import {ReactComponent as Starship} from './../../starship.svg';
 const Navbar = () => {
     return (
         <Nav style={{marginBottom:"1rem"}}>
-            <div className="box" style={{justifyContent:"start"}}>
+            <div className="box" style={{justifyContent:"start"}} onClick={() => alert("c'est normal que ça fasse rien arrête de toucher à tout")}>
                 <Bars/>
             </div>
             <div className="box">
@@ -15,7 +15,7 @@ const Navbar = () => {
             </div>
             <div className="box" style={{justifyContent:"end"}}>
                 <NavBtnLink to="/">
-                    Create a new one
+                    Créer un nouveau Futurebin
                 </NavBtnLink>
             </div>
         </Nav>

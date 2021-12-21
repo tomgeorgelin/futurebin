@@ -3,8 +3,15 @@ import CodeEditor from '@uiw/react-textarea-code-editor';
 import exts from 'code-example/ext.json';
 
 const Home = () => {
-	const [code, setCode] = useState();
-	const [language, setLanguage] = useState('Texte');
+	const [code, setCode] = useState(
+`private String name;
+private Boolean calvitie;
+
+public Personne() {
+	this.name = "Rémi";
+	this.calvitie = true;
+}`);
+	const [language, setLanguage] = useState('java');
 	const [expiration, setExpiration] = useState('N');
 	
 	const handleClick = () => {
@@ -57,14 +64,14 @@ const Home = () => {
 				value={language} 
 				onChange={(evn) => setLanguage(evn.target.value)}
 				style={{
-					
+					margin: '10px 10px 10px 10vw'
 				}}
 				>
 				{exts.map((keyName, idx) => {
 					if (/^diff/.test(keyName)) return <option key='' value=''> Texte </option>;
 					return (
 						<option key={idx} value={keyName}>
-						Language: {keyName}
+						Langage : {keyName}
 						</option>
 					);
 				})}
@@ -86,19 +93,18 @@ const Home = () => {
 				}}
 			/>
 			<div id='create-bar'>
-				<select value={expiration} onChange={(event) => setExpiration(event.target.value)}>
-					<option value='N'>Jamais</option>
-					<option value='10M'>10 minutes</option>
-					<option value='1H'>1 heure</option>
-					<option value='1D'>1 jour</option>
-					<option value='1W'>1 semaine</option>
-					<option value='2W'>2 semaines</option>
-				</select>
-				<button 
-					onClick={handleClick}
-					stlye={{
-						
-					}}>
+				<div style={{margin: '10px 10px 10px 10vw'}}>
+					<label htmlFor='expiration'>Suppression automatique : </label>
+					<select value={expiration} onChange={(event) => setExpiration(event.target.value)} name='expiration'>
+						<option value='N'>Jamais</option>
+						<option value='10M'>10 minutes</option>
+						<option value='1H'>1 heure</option>
+						<option value='1D'>1 jour</option>
+						<option value='1W'>1 semaine</option>
+						<option value='2W'>2 semaines</option>
+					</select>
+				</div>
+				<button onClick={handleClick}>
 					Créer
 				</button>
 			</div>
