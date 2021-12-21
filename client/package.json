@@ -1,5 +1,5 @@
 {
-  "homepage":"./client/build/",
+  "homepage":"./client/build/public/",
   "name": "client",
   "version": "0.1.0",
   "private": true,
