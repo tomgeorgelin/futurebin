@@ -18,8 +18,9 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
+app.get('/futurebin', (req, res) => {
+  res.sendFile(__dirname + '/client/build/public/index.html')
+  //res.send('Hello World!');
 });
 
 app.get('/futurebin/:page',(req, res) => {
