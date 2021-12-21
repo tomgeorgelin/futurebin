@@ -9,6 +9,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://shortener-api-user:GO
 .catch(() => console.log('connexion foirée'));
 
 app.use(express.json());
+app.use(express.static('client/build'))
 
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
