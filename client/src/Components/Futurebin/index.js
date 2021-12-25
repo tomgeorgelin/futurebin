@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from "react-router-dom";
+import CodeEditor from '@uiw/react-textarea-code-editor';
 
 const Futurebin = () => {
 
@@ -10,16 +11,32 @@ const Futurebin = () => {
 
 
     useEffect(() => {
-        fetch("http://localhost:3000/futurebin/" + code)
+        fetch("/api/" + code)
         .then(response => response.json())
         .then(data => {
+            //console.log(data)
             setText(data.text);
+            setLanguage(data.language);
         });
     });
 
     return (
         <div>
-            {code}
+            <CodeEditor 
+                disabled
+				value={text}
+				language={language}
+				padding={15}
+				className='editor'
+				style={{
+					width:'80vw',
+					margin:'auto',
+					borderRadius:'15px',
+					fontSize: 12,
+					backgroundColor: '#ededed',
+					fontFamily: 'ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace',
+				}}
+			/>
         </div>
     )
 }

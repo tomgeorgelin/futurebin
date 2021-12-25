@@ -23,7 +23,11 @@ app.get('/futurebin', (req, res) => {
   //res.send('Hello World!');
 });
 
-app.get('/futurebin/result/:page',(req, res) => {
+app.get('/futurebin/:page',(req, res) => {
+  res.sendFile(__dirname + '/client/build/index.html')
+});
+
+app.get('/api/:page', (req,res) => {
   Futurebin.findOne({short:req.params.page})
   .then(futurebin => {
       if(!futurebin) {
@@ -40,8 +44,7 @@ app.get('/futurebin/result/:page',(req, res) => {
       res.json({message:error});
       console.log(error);
   });
-});
-
+})
 app.post('/api',(req,res) => {
   delete req.body._id;
   let datas = {
