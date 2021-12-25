@@ -13,7 +13,7 @@ public Personne() {
 }`);
 	const [language, setLanguage] = useState('java');
 	const [expiration, setExpiration] = useState('N');
-	const [url, setUrl] = useState("tom-georgelin.fr/futurebin/zeggr");
+	const [url, setUrl] = useState(null);
 	
 	const handleClick = () => {
 		let expiration_date = new Date();
