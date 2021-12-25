@@ -9,12 +9,12 @@ const Navbar = () => {
                 <Bars/>
             </div>
             <div className="box">
-                <NavLink to="/">
+                <NavLink to="/futurebin">
                     <Starship/>
                 </NavLink>
             </div>
             <div className="box" style={{justifyContent:"end"}}>
-                <NavBtnLink to="/">
+                <NavBtnLink to="/futurebin">
                     Créer un nouveau Futurebin
                 </NavBtnLink>
             </div>
