@@ -41,3 +41,18 @@ button {
 	overflow: auto;
 	margin: 0 auto;
 }
+
+.resultBar {
+    background-color: #f0fff4;
+    width: 80vw;
+    margin: auto;
+    color: #2F8559;
+    padding: 0.8rem;
+    border-radius: 15px;
+    font-weight: 600;
+	cursor: pointer;
+}
+
+.resultBar a {
+	font-weight: normal;
+}

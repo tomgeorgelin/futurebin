@@ -13,6 +13,7 @@ public Personne() {
 }`);
 	const [language, setLanguage] = useState('java');
 	const [expiration, setExpiration] = useState('N');
+	const [url, setUrl] = useState("tom-georgelin.fr/futurebin/zeggr");
 	
 	const handleClick = () => {
 		let expiration_date = new Date();
@@ -53,10 +54,17 @@ public Personne() {
 		})
 		.then(res => res.json())
 		.then(data => {
-			console.log(data);
+			setUrl(data.code);
 		})
 		.catch(error => console.log(error));
 	}
+
+	let resultDiv = ''
+	if(url != null) {
+		resultDiv = <div className='resultBar' onClick={() => navigator.clipboard.writeText(url)}>
+			✅ Votre url a partager est : <a href={url}>{url}</a>
+		</div>
+	}  
 
 	return (
 		<>
@@ -108,6 +116,7 @@ public Personne() {
 					Créer
 				</button>
 			</div>
+			{resultDiv}
 		</>
 	);
 }

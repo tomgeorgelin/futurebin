@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.08fed4b8.chunk.css",
-    "main.js": "/static/js/main.1ec32347.chunk.js",
-    "main.js.map": "/static/js/main.1ec32347.chunk.js.map",
+    "main.css": "/static/css/main.de57a109.chunk.css",
+    "main.js": "/static/js/main.6fca3660.chunk.js",
+    "main.js.map": "/static/js/main.6fca3660.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b39cf455.js",
     "runtime-main.js.map": "/static/js/runtime-main.b39cf455.js.map",
     "static/css/2.189ab08d.chunk.css": "/static/css/2.189ab08d.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.d915f79b.chunk.js.map": "/static/js/3.d915f79b.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.189ab08d.chunk.css.map": "/static/css/2.189ab08d.chunk.css.map",
-    "static/css/main.08fed4b8.chunk.css.map": "/static/css/main.08fed4b8.chunk.css.map",
+    "static/css/main.de57a109.chunk.css.map": "/static/css/main.de57a109.chunk.css.map",
     "static/js/2.d5545269.chunk.js.LICENSE.txt": "/static/js/2.d5545269.chunk.js.LICENSE.txt",
     "static/media/starship.3a942e1c.svg": "/static/media/starship.3a942e1c.svg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.b39cf455.js",
     "static/css/2.189ab08d.chunk.css",
     "static/js/2.d5545269.chunk.js",
-    "static/css/main.08fed4b8.chunk.css",
-    "static/js/main.1ec32347.chunk.js"
+    "static/css/main.de57a109.chunk.css",
+    "static/js/main.6fca3660.chunk.js"
   ]
 }
