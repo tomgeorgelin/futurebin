@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import CodeEditor from '@uiw/react-textarea-code-editor';
 import exts from 'code-example/ext.json';
-
+import Select from 'react-select'
+import options from '../languages.json'
 const Home = () => {
 	const [code, setCode] = useState(
 `private String name;
@@ -11,7 +12,7 @@ public Personne() {
 	this.name = "Rémi";
 	this.calvitie = true;
 }`);
-	const [language, setLanguage] = useState('java');
+	const [language, setLanguage] = useState({'value':"java",'label':'java'});
 	const [expiration, setExpiration] = useState('N');
 	const [url, setUrl] = useState(null);
 	
@@ -68,25 +69,16 @@ public Personne() {
 
 	return (
 		<>
-			<select 
-				value={language} 
-				onChange={(evn) => setLanguage(evn.target.value)}
-				style={{
-					margin: '10px 10px 10px 10vw'
-				}}
-				>
-				{exts.map((keyName, idx) => {
-					if (/^diff/.test(keyName)) return <option key='' value=''> Texte </option>;
-					return (
-						<option key={idx} value={keyName}>
-						Langage : {keyName}
-						</option>
-					);
-				})}
-			</select>
+			<div style={{
+						margin: '10px 10vh 10px 10vw'
+					}}>
+				<Select options={options} value={language}
+					onChange={(evn) => setLanguage(evn)}
+					/>
+			</div>
 			<CodeEditor
 				value={code}
-				language={language}
+				language={language.value}
 				placeholder='Coller votre texte ici.'
 				onChange={(evn) => setCode(evn.target.value)}
 				padding={15}
