@@ -40,7 +40,7 @@ public Personne() {
 		}
 		let request = {
 			"code":code,
-			"language":language
+			"language":language.value
 		}
 		if(expiration_date.getTime() !== (new Date(0)).getTime()) {
 			request.expiration = expiration_date;
