@@ -56,7 +56,6 @@ app.post('/futurebin',(req,res) => {
     datas.expireAt = new Date(req.body.expiration);
   } 
   const futurebin = new Futurebin(datas);
-  console.log(futurebin)
   futurebin.save()
       .then((e) => {
           res.status(201);
