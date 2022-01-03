@@ -45,7 +45,7 @@ public Personne() {
 		if(expiration_date.getTime() !== (new Date(0)).getTime()) {
 			request.expiration = expiration_date;
 		}
-		fetch('/api', {
+		fetch('/futurebin', {
 			method: 'POST',
 			headers: {
 				'Accept': 'application/json',

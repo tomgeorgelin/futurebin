@@ -11,7 +11,7 @@ const Futurebin = () => {
 
 
     useEffect(() => {
-        fetch("/api/" + code)
+        fetch("/get-futurebin/" + code)
         .then(response => response.json())
         .then(data => {
             //console.log(data)

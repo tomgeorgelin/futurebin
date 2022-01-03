@@ -8,7 +8,7 @@ function App() {
     <Router>
       <Navbar/>
       <Routes>
-        <Route path="/futurebin" element={<Home/>} />
+        <Route path="/" element={<Home/>} />
         <Route path="/futurebin/:code" element={<Futurebin/>} />
       </Routes>
     </Router>

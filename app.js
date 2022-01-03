@@ -18,7 +18,7 @@ app.use(express.static(__dirname + '/client/build'));
 //   next();
 // });
 
-app.get('/futurebin', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(__dirname + '/client/build/index.html')
   //res.send('Hello World!');
 });
@@ -27,7 +27,7 @@ app.get('/futurebin/:page',(req, res) => {
   res.sendFile(__dirname + '/client/build/index.html')
 });
 
-app.get('/api/:page', (req,res) => {
+app.get('/get-futurebin/:page', (req,res) => {
   Futurebin.findOne({short:req.params.page})
   .then(futurebin => {
       if(!futurebin) {
@@ -45,7 +45,7 @@ app.get('/api/:page', (req,res) => {
       console.log(error);
   });
 })
-app.post('/api',(req,res) => {
+app.post('/futurebin',(req,res) => {
   delete req.body._id;
   let datas = {
     text:req.body.code,
@@ -53,14 +53,14 @@ app.post('/api',(req,res) => {
     code:makeId(6)
   }
   if(req.body.expiration) {
-    datas.expireAt = req.body.expiration;
+    datas.expireAt = new Date(req.body.expiration);
   } 
   const futurebin = new Futurebin(datas);
-  
+  console.log(futurebin)
   futurebin.save()
       .then((e) => {
           res.status(201);
-          res.json({code:req.protocol + '://' + req.get('host') + '/futurebin/' + e.code});
+          res.json({code:'http://' + req.get('host') + '/futurebin/' + e.code});
       })
       .catch(error => res.status(400).json({ error }));
 })
